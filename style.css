@@ -2,9 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
 
-
-
+.page-wrapper {
+    display:flex;
+    flex-direction: column;
+    
+}
 
 #css-zen-garden {
     background-image: linear-gradient(360deg, #87CEEB,#4CB7E1, #2D5E97);
@@ -19,18 +23,20 @@ header {
     font-style: normal;
     margin-top: 200px;
     position: relative;
+    align-self: stretch;
+    
     
 }
 
 header::before {
     content: "";
     position: absolute;
-    top: -275px;
-    left: 0;
+    top: -325px;
+    left: 40px;
     width: 1938px;
     height: 811px;
     background-image: url('Petals.png');
-    background-size: contain;
+    background-size: auto 100%;
     background-position: top;
     opacity: 0.5;
     z-index: -1;
@@ -40,20 +46,22 @@ header::before {
 h1 {
     font-size: 120px;
     margin: 0;
+    position: relative;
 }
 
 h1::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
+    top: 40px;
+    left: 670px;
+    width: 50px;
+    height: 50px;
     background-image: url('3 Petals.png');
-    background-size: contain;
+    background-size: auto 100%;
     background-position: center;
-    opacity: 0.5;
+    opacity: .9;
     z-index: -1;
+    
 }
 
 h1 + h2 {
@@ -65,3 +73,12 @@ h1 + h2 {
     color: white;
 }
 
+div:not(header) {
+    unicode-bidi: isolate;
+    margin-top:  100px;
+    font-family: 'Ojuju';
+    z-index: -2;
+    
+
+   
+}
