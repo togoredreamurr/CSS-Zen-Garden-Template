@@ -1,1 +1,67 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
+
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+
+
+
+
+#css-zen-garden {
+    background-image: linear-gradient(360deg, #87CEEB,#4CB7E1, #2D5E97);
+}
+
+header {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    font-family: 'Oooh Baby', cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 200px;
+    position: relative;
+    
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: -275px;
+    left: 0;
+    width: 1938px;
+    height: 811px;
+    background-image: url('Petals.png');
+    background-size: contain;
+    background-position: top;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+h1 {
+    font-size: 120px;
+    margin: 0;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url('3 Petals.png');
+    background-size: contain;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+h1 + h2 {
+    font-size: 30px;
+    margin-left: 250px;
+}
+
+* {
+    color: white;
+}
+
