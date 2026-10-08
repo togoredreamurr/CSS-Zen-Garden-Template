@@ -23,7 +23,7 @@ header {
     font-style: normal;
     margin-top: 200px;
     position: relative;
-    align-self: stretch;
+    
     
     
 }
@@ -40,6 +40,7 @@ header::before {
     background-position: top;
     opacity: 0.5;
     z-index: -1;
+    
 }
 
 
@@ -67,6 +68,7 @@ h1::before {
 h1 + h2 {
     font-size: 30px;
     margin-left: 250px;
+    margin-bottom: 600px;
 }
 
 * {
@@ -77,8 +79,8 @@ div:not(header) {
     unicode-bidi: isolate;
     margin-top:  100px;
     font-family: 'Ojuju';
-    z-index: -2;
-    
+}
 
-   
+div.summary {
+    text-align: center;
 }
