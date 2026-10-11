@@ -6,8 +6,8 @@
 
 .page-wrapper {
     display:flex;
-    flex-direction: column;
-    
+    flex-flow: column wrap;
+
 }
 
 #css-zen-garden {
@@ -21,7 +21,7 @@ header {
     font-family: 'Oooh Baby', cursive;
     font-weight: 400;
     font-style: normal;
-    margin-top: 200px;
+    margin-top: 100px;
     position: relative;
     
     
@@ -32,11 +32,11 @@ header::before {
     content: "";
     position: absolute;
     top: -325px;
-    left: 40px;
-    width: 1938px;
+    left: 20px;
+    width: 1838px;
     height: 811px;
     background-image: url('Petals.png');
-    background-size: auto 100%;
+    background-size: contain;
     background-position: top;
     opacity: 0.5;
     z-index: -1;
@@ -50,11 +50,11 @@ h1 {
     position: relative;
 }
 
-h1::before {
+h1::after {
     content: "";
     position: absolute;
     top: 40px;
-    left: 670px;
+    left: 605px;
     width: 50px;
     height: 50px;
     background-image: url('3 Petals.png');
@@ -68,14 +68,14 @@ h1::before {
 h1 + h2 {
     font-size: 30px;
     margin-left: 250px;
-    margin-bottom: 600px;
+    margin-bottom: 500px;
 }
 
 * {
     color: white;
 }
 
-div:not(header) {
+div:not(h1, h2) {
     unicode-bidi: isolate;
     margin-top:  100px;
     font-family: 'Ojuju';
@@ -84,3 +84,11 @@ div:not(header) {
 div.summary {
     text-align: center;
 }
+
+.preamble,
+.main.supporting {
+    width: 85%;
+    max-width: 1200px;
+    margin-right: auto;
+}
+
